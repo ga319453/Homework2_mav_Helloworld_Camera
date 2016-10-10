@@ -22,11 +22,12 @@ import android.net.Uri;
 import java.io.File;
 import android.provider.MediaStore;
 
-//123
+
 public class MainActivity extends AppCompatActivity
     implements NavigationView.OnNavigationItemSelectedListener {
     //
     //宣告
+    int a;
     Button button;
     ImageView imageView;
     static final int CAM__REQUEST = 1;
