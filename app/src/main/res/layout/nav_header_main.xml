@@ -43,15 +43,25 @@
 
 
                 <Button
-                    android:text="Photo"
+                    android:text="GPS"
                     android:src="@android:drawable/ic_menu_gallery"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/button3"
+                    android:id="@+id/GPS"
                     android:background="@android:color/transparent"
                     android:adjustViewBounds="true"
                     android:onClick="clickToast3"/>
 
+                <!--<TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android: android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Coordinates"
+                    android:id="@+id/textView"
+                    android:layout_below="@+id/GPS"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"/>
+                -->
             </LinearLayout>
 
             <Button

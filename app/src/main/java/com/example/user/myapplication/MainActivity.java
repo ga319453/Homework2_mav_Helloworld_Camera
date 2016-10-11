@@ -1,6 +1,9 @@
 package com.example.user.myapplication;
 
 import android.graphics.drawable.Drawable;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,6 +17,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Button;
 import android.content.Intent;
@@ -27,7 +31,7 @@ public class MainActivity extends AppCompatActivity
     implements NavigationView.OnNavigationItemSelectedListener {
     //
     //宣告
-    int a;
+
     Button button;
     ImageView imageView;
     static final int CAM__REQUEST = 1;
@@ -40,6 +44,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         button = (Button) findViewById(R.id.button);
         imageView = (ImageView)findViewById(R.id.image_view);
+
         button.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -64,15 +69,15 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        /*Button nextPageBtn2 = (Button) findViewById(R.id.button2);
+        Button nextPageBtn2 = (Button) findViewById(R.id.GPS);
         nextPageBtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, Page2.class);
+                intent.setClass(MainActivity.this, Page3.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

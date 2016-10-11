@@ -9,4 +9,5 @@
 
     <string name="finish">拍照完畢</string>
     <string name="phone">相機</string>
+    <string name="title_activity_page3">Page3</string>
 </resources>
