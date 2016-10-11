@@ -26,4 +26,5 @@ public class Page3 extends AppCompatActivity {
         });
     }
 
+
 }

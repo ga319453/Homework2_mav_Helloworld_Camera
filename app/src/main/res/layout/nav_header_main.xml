@@ -48,9 +48,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/GPS"
-                    android:background="@android:color/transparent"
                     android:adjustViewBounds="true"
-                    android:onClick="clickToast3"/>
+                    android:onClick="clickToast3"
+                    android:layout_gravity="center_horizontal"/>
 
                 <!--<TextView
                     android:layout_width="fill_parent"
